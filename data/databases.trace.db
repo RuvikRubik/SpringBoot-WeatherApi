@@ -1,0 +1,8 @@
+2023-07-22 15:09:19 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "Create [*]Database Albion"; oczekiwano "OR REPLACE, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL TEMPORARY, GLOBAL TEMPORARY, TEMP, TEMPORARY, TABLE, SYNONYM, UNIQUE, HASH, SPATIAL, INDEX"
+Syntax error in SQL statement "Create [*]Database Albion"; expected "OR REPLACE, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL TEMPORARY, GLOBAL TEMPORARY, TEMP, TEMPORARY, TABLE, SYNONYM, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+Create Database Albion [42001-214]
+2023-07-22 15:17:38 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "SELECT * FROM ""flyway_schema_history""USERS [*]USERS"
+Syntax error in SQL statement "SELECT * FROM ""flyway_schema_history""USERS [*]USERS"; SQL statement:
+SELECT * FROM "flyway_schema_history"USERS USERS [42000-214]

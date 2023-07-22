@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/StyleIndex.css">
+    <script src="/BackgroundControl.js"></script>
+    <title>HomePage</title>
+</head>
+<body>
+<div class="box">
+    <div class="form">
+        <form action="/Weather" method="POST">
+            <input type="text" name="City" placeholder="Miasto"><br>
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+    <div class="city" th:if="${city}">
+        <h1>Pogoda dla miasta: <span th:text="${city}"></span></h1>
+        <p>Temperatura: <span th:text="${temperature}"></span></p>
+    </div>
+</div>
+</body>
+</html>
